@@ -1,5 +1,5 @@
-# Trie
-A trie, sometimes called a radix tree, a digital tree, or a prefix tree, is a tree-shaped
+# Radix Trie
+A Radix Trie, sometimes just called a Trie, a digital tree, or a prefix tree, is a tree-shaped
 deterministic finite automaton (DFA). It is a kind of serach trie that is used to store
 a dynamic set or associative array where keys are usually strings. Unlike a binary search,
 there is no node in the tree associated with a specific key. Instead, it acts more like a
@@ -17,18 +17,28 @@ In this example, we store the letters within a hash so there is constant lookup 
 the maximum amount of time it takes to match a letter to the language takes just n iterations, where
 n is the length of the string.
 
+## Getting Started
+- Run `make` in the directory to create your binary file.
+- Run the program.
+
+## Input
+Look at `examples/default.in` and `examples/custom.in` for examples.
+- The first bit of input the program takes is the state type (CUSTOM, or DEFAULT)
+     - `DEFAULT` will test your input on the default language, which happens to be simple [MIPS instructions](https://en.wikipedia.org/wiki/MIPS_architecture).
+     - `CUSTOM` will allow you to type in your own language. It will read words until you type `END`
+- The second type of input the program takes is language testing. You type anything, and the program determines if it is part of the specified language.
+
 ## Time Complexity
 Time complexity depends entirely on the implementation.
 
 
 When using hashes:
-- word lookup typically is O(n) where n is the length of the word
-- insert is typically O(n log n) where n is the length of the word
-but the complexity depends on the type of hash being used.
+- word lookup typically is `O(n)` where n is the length of the word
+- insert is typically `O(n log n)` where n is the length of the word but the complexity depends on the type of hash being used.
 
 When using Binary Trees:
-- word lookup is typically O(n)
-- insert depends entirely on the implementation, but can be as fast as O(n log m ) where m is the number of keys in the tree.
+- word lookup is typically `O(n)`
+- insert depends entirely on the implementation, but can be as fast as `O(n log m )` where m is the number of keys in the tree.
 
 ## Comparisons
 ### Advantages over Hash Tables
