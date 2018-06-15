@@ -1,4 +1,4 @@
-# Radix Trie
+# [Radix Tree](https://en.wikipedia.org/wiki/Trie)
 A Radix Trie, sometimes just called a Trie, a digital tree, or a prefix tree, is a tree-shaped
 deterministic finite automaton (DFA). It is a kind of serach trie that is used to store
 a dynamic set or associative array where keys are usually strings. Unlike a binary search,
@@ -18,7 +18,7 @@ the maximum amount of time it takes to match a letter to the language takes just
 n is the length of the string.
 
 ## Getting Started
-- Run `make` in the directory to create your binary file.
+- Run `make` in the `src` directory to create your binary file.
 - Run the program.
 
 ## Input
